@@ -4,9 +4,16 @@
 
 class HomeDog:public HomeAnimal
 {
+	string _favToy;
 public:
 	HomeDog() = default;
-	HomeDog(string name,string type,string sound):HomeAnimal(name,type,sound){}
+	HomeDog(string name,string type,string sound,string toy):HomeAnimal(name,type,sound){
+		_favToy = toy;
+	}
+
+	void showToy() {
+		cout << "Favorite toy: " << _favToy << endl;
+	}
 
 };
 

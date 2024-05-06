@@ -13,15 +13,15 @@ using namespace std;
 
 int main() {
 
-	HomeCat cat("Barsik", "Kot", "Myay");
-	HomeDog dog("King", "Pes", "Gav");
-	HomeHamster hamster("Borys", "homyak", "idk");
-	HomeParrot parrot("Kesha", "popygaj", "4irik");
+	HomeCat cat("Barsik", "Kot", "Myay","Sleep");
+	HomeDog dog("King", "Pes", "Gav","Ball");
+	HomeHamster hamster("Borys", "homyak", "idk","Bread");
+	HomeParrot parrot("Kesha", "popygaj", "4irik","Fly");
 
 	cat.show();
 	cat.sound();
 	cat.type(); 
-	
+	cat.showSleep();
 
 	return 0;
 }
